@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/blue_login"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_login"
+        >
+
+        <TextView
+            android:id="@+id/tv_quit"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:background="@color/gray_login"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="退出登陆"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@color/gray_login"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="dhz的通讯录"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+
+            />
+        <TextView
+            android:id="@+id/tv_add"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="添加通讯录"
+            android:layout_alignParentRight="true"
+            android:background="@color/gray_login"
+            android:textColor="@color/white"
+            android:gravity="center_vertical|center_horizontal"
+            />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

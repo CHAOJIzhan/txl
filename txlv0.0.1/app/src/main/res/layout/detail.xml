@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_login"
+    >
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_name"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+       android:layout_below="@id/tv_head"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        >
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:text="姓名:"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:id="@+id/ed_name"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/ll_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:text="电话:"
+            android:textColor="@color/white"
+            />
+        <EditText
+            android:id="@+id/ed_phone"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_emial"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/ll_phone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:text="email:"
+            android:textColor="@color/white"
+            />
+        <EditText
+            android:id="@+id/ed_email"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            />
+    </LinearLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/tv_delete"
+        android:layout_above="@+id/tv_save"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:text="删除联系人"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:background="@color/gray_login"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_save"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:text="修改联系人"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:background="@color/gray_login"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        />
+
+
+
+</RelativeLayout>
